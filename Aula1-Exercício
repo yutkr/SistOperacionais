@@ -1,2 +1,17 @@
 Aula 1 - Exercício - 07/02/2017
 
+Relacione cada chamada de sistema (system call) do padrão POSIX com as categorias abaixo:
+
+Processos
+
+Memória principal
+
+Arquivos
+
+Sistema de E/S
+ 
+Armazenamento secundário
+
+Rede
+
+Controle de Acesso
