@@ -2,13 +2,18 @@ Aula 1 - Exercício - 07/02/2017
 
 Relacione cada chamada de sistema (system call) do padrão POSIX com as categorias abaixo:
 
-Processos
+Processos: 
 
 Memória principal
 
 Arquivos
 
-Sistema de E/S
+Sistema de E/S: 
+- select(2POSIX)
+- read(2POSIX)
+- readv(2POSIX)
+- write(2POSIX)
+- writev(2POSIX)
  
 Armazenamento secundário
 
