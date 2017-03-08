@@ -1,0 +1,50 @@
+Escalonamento Linux:
+
+O escalonador do Linux é baseado em time sharing, ou seja, na divisão do tempo de processador entre os processos e para tanto utiliza um scheduler, que é o programa encarregado de agendar os processos, isto é, ele deve escolher o proximo proesso que vai rodar, deve decidir quando o tempo de um proximo processo terminou e o que fazer com o um processo quando ele requisita I/O e ssim por diante.
+
+Ao ser chamado, o scheduler tem uma sequencia de ações que devem ser tomadas, são essas:
+
+Kernel Work - O scheduler deve realizar uma serie de rotinas especificas do kernel e deve tratar da fila de esperas de tarefas do scheduler.
+Seleção de Processos - o scheduler deve escolher o processo que ira rodar. A prioridade é o meio pelo qual ele escolhe.
+Troca de Processos - O scheduler salva as condições que o processo atual aprensenta e carrega o contexto do novo processo que irá mudar.
+Prioridades
+
+O Linux trabalha com dois tipos de prioridade:
+
+Estática - exclusiva de processos em tempo real, neste caso a prioridade é definida pelo usuario e não modificada pelo escalonador. Somente usuarios com provilegios especiais no sistema podem definir processo em tempo real.
+Dinâmica - aplicada aos demais, sendo sua prioridade calculada em função da prioridade base do processo e a quantidade de tempo que lhe resta para execução.
+
+*OBS: Se existir um processo com prioridade estática no estado TASK_RUNNING nenhum processo dinamico erá rodar até que ele pare de executar.*
+Politicas de escalonamento
+
+Existem criterios para o escalonamento dos processos do Linux:
+
+Policy - pode haver duas politicas de escalonamento round-robin e first-in-first-out(FIFO).
+Priocity - a prioridade do processo é dada de acordo com o tempo que ele gastou para executar.
+Real Time Priority - esse recurso é usado para processos de tempo real.
+Counter - é a quantidade de tempo que os processos tem permissão para rodar.
+Comandos Linux para administração de processos
+
+*top
+*htop
+*ps
+*kill, killall
+*renice
+*time
+*Strace
+
+
+Escalonamento Windows:
+
+O escalonamento de processos é uma tarefa complicada, pois nenhum algoritimo é totalemnte eficiente e a prova de falhas, principalmente em se tratando de sistemas interativos, como o Windows, pois a interação com o usuario é funcamental para este sistema onde quem o utiliza procura respostas rápidas e a todo momento processos são interrompidos pelo usuario. O escalonamento do sistema operacional utiliza alguns critérios de escalonamento, como:
+
+A taxa de utilização da CPU: que é a fracção de tempo durante a qualq ela está sendo ocupada
+Throughput: que são números de procssos terminados por unidade de tempo
+Turnaround: que é o tempo trasncorrido desde o moneto em que o software entra e o instante em que termina sua execução
+Tempo de resposta: intervalo entre a chegada ao sistema e inicio de sua execução
+Tempo de espera: soma dos periodos em que o programa etava no seu estado pronto.
+Politicas de escalonamento
+
+FIFO - o algoritimo FIFO não é preemptivo. Uma ves que a CPU seja alocada para um proesso, ele fica com ele até o final ou até que peça alguma operação de E/S. para sistemas de tempo compartilhado, este algoritimo não se aplica.
+SHORTEST JOB FIRST(SJF) - É um algoritiomo não preemptivo no qual o processo na fila de espera com o menor tempo total estimado de processamento é executado em seguida. O SJF reduz o tempo medio de espera sobre o algoritimo FIFO e favorece processos pequenos em prejuizo dos processos maiores.
+ESCALONAMENTO POR PRIORIDADE - A cada processo é associada uma prioridade e a CPU é alocada para o processo com a mais alta prioridade. Processos com prioridades iguais são escalonados segundo a politica FIFO. Este escalonamento pode ser tanto preemptivo quanto não preemptivo.
