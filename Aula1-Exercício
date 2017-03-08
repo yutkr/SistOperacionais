@@ -2,23 +2,20 @@ Aula 1 - Exercício - 07/02/2017
 
 Relacione cada chamada de sistema (system call) do padrão POSIX com as categorias abaixo:
 
-Processos: 
-fstat(2POSIX),fstatfs(2POSIX),getfsstat(2POSIX),getrlimit(2POSIX),lstat(2POSIX),mount(2POSIX),mq_close(2POSIX),mq_getattr(2POSIX),mq_open(2POSIX),mq_receive(2POSIX),mq_send(2POSIX),mq_setattr(2POSIX),mq_unlink(2POSIX),select(2POSIX),unmount(2POSIX)
+Processos
+.Statfs (2POSIX) .Fstatfs (2POSIX) .Getfsstat (2POSIX) .Listen (2POSIX) .Gethostname (2POSIX) .Lstat (2POSIX) .Mq_getattr (2POSIX) .Mq_close (2POSIX) .Mq_open (2POSIX) .Mq_receive (2POSIX) .Mq_send (2POSIX) .Mq_unlink (2POSIX) .Nfssvc (2POSIX) .Pipe (2POSIX) .Sethostname (2POSIX) .Sethostname (2POSIX) .Setrlimit (2POSIX) .Settimeofday (2POSIX) .Shm_unlink (2POSIX) .Shm_open (2POSIX) .shutdown(2POSIX)
 
-Memória principal:
-getdomainname(2POSIX),gethostname(2POSIX),readlink(2POSIX),read(2POSIX),readv(2POSIX),write(2POSIX),writev(2POSIX)
+Memória Principal
+.Fpathconf (2POSIX) .Fsync (2POSIX) .Mmap (2POSIX) .Munmap (2POSIX) .Symlink (2POSIX)
 
-Arquivos:
-chdir(2POSIX),chmod(2POSIX),chroot(2POSIX),close(2POSIX),dup(2POSIX),dup2(2POSIX),fchdir(2POSIX),getfh(2POSIX),link(2POSIX),mkdir(2POSIX),mkfifo(2POSIX),mknod(2POSIX),rename(2POSIX),rmdir(2POSIX),stat(2POSIX),statfs(2POSIX),symlink(2POSIX),truncate(2POSIX),umask(2POSIX),unlink(2POSIX),
+Arquivos
+.read(2POSIX) .Readv (2POSIX) .rename(2POSIX) .Rmdir (2POSIX) .Mount (2POSIX) .Chown (2POSIX) .Chroot (2POSIX) .Chmod (2POSIX) .Close (2POSIX) .Dup (2POSIX) .Dup2 (2POSIX) .Fchmod (2POSIX) .Fchown (2POSIX) .Fcntl (2POSIX) .flock(2POSIX) .Fstat (2POSIX) .Ftruncate (2POSIX) .Stat (2POSIX) .Statfs (2POSIX) .Ftruncate (2POSIX) .Getdirentries (2POSIX) .Getfh (2POSIX) .Gettimeofday (2POSIX) .Hostname (2POSIX) .Lseek (2POSIX) .open(2POSIX) .Truncate (2POSIX) .Umask (2POSIX) .Mkdir (2POSIX) .Mkfifo (2POSIX) .Mknod (2POSIX)
 
-Sistema de E/S: 
-fsync(2POSIX),getpeername(2POSIX),gettimeofday(2POSIX),hostname(2POSIX),ioctl(2POSIX),swapon(2POSIX),sync(2POSIX)
- 
-Armazenamento secundário:
-fpathconf(2POSIX),ftruncate(2POSIX),ftruncate(2POSIX),mmap(2POSIX),munmap(2POSIX),pipe(2POSIX),shm_open(2POSIX),shm_unlink(2POSIX)
+Sistema de E/S 
+.select(2POSIX) .Swapon (2POSIX)
 
-Rede:
-accept(2POSIX),bind(2POSIX),connect(2POSIX),getrlimit(2POSIX),getsockopt(2POSIX),listen(2POSIX),recv(2POSIX),recvfrom(2POSIX),recvmsg(2POSIX),send(2POSIX),sendmsg(2POSIX),sendto(2POSIX),sethostname(2POSIX),sethostname(2POSIX),setrlimit(2POSIX),setsockopt(2POSIX),settimeofday(2POSIX),shutdown(2POSIX),socket(2POSIX),socketpair(2POSIX)
+Armazenanmento Secundário
+.Chdir (2POSIX) .Chroot (2POSIX) .Fchdir (2POSIX) .Link (2POSIX) .Sync (2POSIX) .unlink(2POSIX) .write(2POSIX) .writev(2POSIX)
 
-Controle de Acesso:
-access(2POSIX),chown(2POSIX),chmod(2POSIX),fchmod(2POSIX),fchown(2POSIX),fcntl(2POSIX),flock(2POSIX),getdirentries(2POSIX),getdomainname(2POSIX),lseek(2POSIX),nfssvc(2POSIX),open(2POSIX),utimes(2POSIX)
+Rede
+.Accept (2POSIX) .Acesso (2POSIX) .bind(2POSIX) .Connect (2POSIX) .Getpeername (2POSIX) .Getsockname (2POSIX) .Getsockopt (2POSIX) .Recv (2POSIX) .Recvfrom (2POSIX) .Recvmsg (2POSIX) .send(2POSIX) .sendmsg(2POSIX) .Sendto (2POSIX) .Setsockopt (2POSIX) .socket(2POSIX) .Socketpair (2POSIX)
