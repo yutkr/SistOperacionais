@@ -3,20 +3,22 @@ Aula 1 - Exercício - 07/02/2017
 Relacione cada chamada de sistema (system call) do padrão POSIX com as categorias abaixo:
 
 Processos: 
+fstat(2POSIX),fstatfs(2POSIX),getfsstat(2POSIX),getrlimit(2POSIX),lstat(2POSIX),mount(2POSIX),mq_close(2POSIX),mq_getattr(2POSIX),mq_open(2POSIX),mq_receive(2POSIX),mq_send(2POSIX),mq_setattr(2POSIX),mq_unlink(2POSIX),select(2POSIX),unmount(2POSIX)
 
-Memória principal
+Memória principal:
+getdomainname(2POSIX),gethostname(2POSIX),readlink(2POSIX),read(2POSIX),readv(2POSIX),write(2POSIX),writev(2POSIX)
 
-Arquivos
+Arquivos:
+chdir(2POSIX),chmod(2POSIX),chroot(2POSIX),close(2POSIX),dup(2POSIX),dup2(2POSIX),fchdir(2POSIX),getfh(2POSIX),link(2POSIX),mkdir(2POSIX),mkfifo(2POSIX),mknod(2POSIX),rename(2POSIX),rmdir(2POSIX),stat(2POSIX),statfs(2POSIX),symlink(2POSIX),truncate(2POSIX),umask(2POSIX),unlink(2POSIX),
 
 Sistema de E/S: 
-- select(2POSIX)
-- read(2POSIX)
-- readv(2POSIX)
-- write(2POSIX)
-- writev(2POSIX)
+fsync(2POSIX),getpeername(2POSIX),gettimeofday(2POSIX),hostname(2POSIX),ioctl(2POSIX),swapon(2POSIX),sync(2POSIX)
  
-Armazenamento secundário
+Armazenamento secundário:
+fpathconf(2POSIX),ftruncate(2POSIX),ftruncate(2POSIX),mmap(2POSIX),munmap(2POSIX),pipe(2POSIX),shm_open(2POSIX),shm_unlink(2POSIX)
 
-Rede
+Rede:
+accept(2POSIX),bind(2POSIX),connect(2POSIX),getrlimit(2POSIX),getsockopt(2POSIX),listen(2POSIX),recv(2POSIX),recvfrom(2POSIX),recvmsg(2POSIX),send(2POSIX),sendmsg(2POSIX),sendto(2POSIX),sethostname(2POSIX),sethostname(2POSIX),setrlimit(2POSIX),setsockopt(2POSIX),settimeofday(2POSIX),shutdown(2POSIX),socket(2POSIX),socketpair(2POSIX)
 
-Controle de Acesso
+Controle de Acesso:
+access(2POSIX),chown(2POSIX),chmod(2POSIX),fchmod(2POSIX),fchown(2POSIX),fcntl(2POSIX),flock(2POSIX),getdirentries(2POSIX),getdomainname(2POSIX),lseek(2POSIX),nfssvc(2POSIX),open(2POSIX),utimes(2POSIX)
